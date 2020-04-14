@@ -1,0 +1,119 @@
+﻿body {
+    background-color: black;
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+        color:white;
+
+}
+form {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+.header img {
+    float: left;
+    width: 150px;
+    height: 100px;
+    
+}
+#cart img{
+    
+    width: 50px;
+    height: 60px;
+}
+#logo img{
+    width:200px;
+    height:80px
+}
+#logo2 img{
+    width:150px;
+    height: 150px;
+}
+
+#welkom{
+    text-align:center;
+}
+#text1{
+    text-align: center;
+
+}
+#text2 {
+    text-align:center;
+}
+/*dit is code  voor de slideshow */
+.slide-container{
+    width:613px;
+    height:268px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow: hidden;
+    text-align: center;
+
+}
+.image-container{
+    width:2452px;
+    height:268px;
+    position:relative;
+    transition:left 2s;
+    -webkit-transition: left 2s;
+}
+.slider-image{
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+.button-container{
+    top: -20px;
+    position: relative;
+}
+.slider-button{
+    display:inline-block;
+    height: 10px;
+    width:10px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+/*Dit zorgt ervoor dat de slides bewegen wanneer er op de buttons geklikt word.*/
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+#slider-image-2:target ~ .image-container {
+    left: -613px;
+}
+#slider-image-3:target ~ .image-container {
+    left: -1226px;
+}
+#slider-image-4:target ~ .image-container {
+    left: -1838px;
+}
+.information{
+    text-align: center;
+}
+/*Het lukte mij niet om button te maken die naar de volgende pagina wilde gaan daarom heb ik de <a href> tag gebruikt
+    en dat als een button opgemaakt met css. */
+.button {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}

@@ -1,0 +1,60 @@
+﻿<<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="kwartje.css">
+        <!--Dit zorgt ervoor dat de gebruiker feedback terugkrijgt wanneer er op de verzendknop gedrukt wordt -->
+    <script type="text/javascript">
+        function thankuser() {
+            alert("Bedankt voor het inschrijven voor onze nieuwsbrief! Binnenkort krijgt u de eerste nieuwsbrief in uw postvak dus hou u e - mail goed in de gaten.")
+        }
+    </script>
+    </head>
+    <body>
+        <div class="header">
+       
+
+        </div>
+        <!-- Navigatie -->
+        <nav class="navbar">
+            <a href="kwartje.html">-Home-</a>
+            <a href="bieren.html">-bieren-</a>
+           
+            <a href="kwartje.html" id="logo"> <img src="images/logo2.jpg"> </a>
+            
+            <a href="nieuwsbrief.html">-nieuwsbrief-</a>
+            <a href="contact.html">-Contact-</a>
+            
+            <a href="cart.html" id="cart"> <img src="images/cart.jpg"/> </a>
+            
+        </nav>
+        <!--Dit is het uitleg over de nieuwsbrief-->
+        <h1 align="center"> -De craftnieuwsbrief-</h1>
+       
+        <h3>
+            Wilt u meer te weten komen over ons assortiment craftbieren en als eerste updates krijgen over ons craftbier?</br>
+            Schrijf u dan in voor onze craftnieuwsbrief door uw gegevens hiernaast achter te laten.
+        </h3>
+        <img src="images/overzicht.jpg" width="500px" height="200px" />
+        <!--Dit is het formulier -->
+        <form action="#" method="post">
+            <div class="field-container">
+                <label for="name">Naam:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="field-container">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="field-container">
+                <label for="telefoonnummer">telefoonnummer:</label>
+                <input type="text" name="telefoonnummer" id="telefoon">
+            </div>
+
+            <button onclick="thankuser()">verzenden</button>
+
+        </form>
+
+    </body>
+</html>
